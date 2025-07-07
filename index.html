@@ -1,489 +1,417 @@
-
-<!-- Template from Jon Barron -->
-<html>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Zixing Wang">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Zixing Wang</title>
-    
+
     <link rel="icon" href="profile_images/purdue_logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  </head>
-  
-  <body>
-    <table width="800" border="0" align="center" cellspacing="0" cellpadding="0">
-      <tr>
-        <td>
-          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-          <tr>
-            <td width="73%" valign="middle">
-              <p style="text-align: center;">
-                <name>Zixing Wang</name><br>
-	        Pronounced as <i>Zee-Shing</i><br>
-              </p>
-              <p>
-                I am a Ph.D. student at the Department of Computer Science at Purdue University, advised by Professor 
-                <a href="https://qureshiahmed.github.io/">Ahmed H. Qureshi</a>. I am part of the 
-                <a href="https://corallab.net/">Cognitive Robot Autonomy & Learning (CoRAL) Lab</a>.
-              </p>
-              <p>
-               Previously, I received my Master in Robotics and Bachelor in Computer Science from the University of Minnesota, where I worked with Professor <a href="https://www-users.cse.umn.edu/~papan001/">Nikolaos Papanikolopoulos</a>.
-              </p>              
-              <p style="text-align: center;">
-              	<a href="mailto:wang5389@purdue.edu">Email</a> |
-              	<a href="https://drive.google.com/file/d/1y2jVVj5exKuKpDChMNe00PvsWRFd8L-D/view?usp=sharing">CV</a> |
-                <a href="https://scholar.google.com/citations?user=vplpMLoAAAAJ&hl=en">Google Scholar</a> |       
-                <a href="https://github.com/wzx16">GitHub</a>
-              </p>
-            </td>
-            
-            <td width="27%">
-              <img src="profile_images/icon_next_full.jpg", width="100%", align="right">
-            </td>
-          </tr>
-          </table>
-          
+    
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <nav class="main-nav">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#updates">Updates</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experiences">Experiences</a></li>
+            <li><a href="#reviewer-service">Reviewer Service</a></li>
+            <li><a href="#teaching">Teaching</a></li>
+        </ul>
+    </nav>
 
+    <div class="container">
+        <header id="home" class="profile-section">
+            <div class="profile-image">
+                <img src="profile_images/icon_next_full.jpg" alt="Zixing Wang">
+            </div>
+            <div class="profile-text">
+                <h1 class="name">Zixing Wang</h1>
+                <p class="pronunciation">Pronounced as <i>Zee-Shing</i></p>
+                <p>
+                    I am a Ph.D. student at the Department of Computer Science at Purdue University, advised by Prof.
+                    <a href="https://qureshiahmed.github.io/">Ahmed H. Qureshi</a>. Previously, I received my Master 
+                    in Robotics and Bachelor in Computer Science from the University of Minnesota, where I worked 
+                    with Prof. <a href="https://www-users.cse.umn.edu/~papan001/">Nikolaos Papanikolopoulos</a>. 
+                </p>
+                <p>
+                  I'm broadly interested in robot learning, especially in the areas of generalizable manipulation policies, 
+                  novel objects manipulation, and robot tool use.
+                </p>
+                <div class="contact-links">
+                    <a href="mailto:wang5389@purdue.edu"><i class="fa fa-envelope"></i>Email</a>
+                    <a href="https://drive.google.com/file/d/1y2jVVj5exKuKpDChMNe00PvsWRFd8L-D/view?usp=sharing"><i class="fa fa-file-text"></i>CV</a>
+                    <a href="https://scholar.google.com/citations?user=vplpMLoAAAAJ&hl="><i class="fa fa-google"></i>Google Scholar</a>
+                    <a href="https://github.com/wzx16"><i class="fa fa-github"></i>GitHub</a>
+                </div>
+            </div>
+        </header>
 
-          <!-- News -->
-          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-            <tr>
-              <td width="100%">
-              <heading>Updates</heading><br><br>
-              <b><font color="red">[04/2025]</font></b>  I will intern at Mitsubishi Electric Research Laboratories (MERL) this summer. <br><br>
-              <b><font color="red">[01/2025]</font></b>  The paper of IPA policy is accepted by ICRA 2025. <br><br>
-              <b><font color="red">[01/2025]</font></b>  The paper of DeRi-IGP is accepted by RA-L. <br><br>
-<!--               <b><font color="red">[10/2023]</font></b>  The short paper of DeRi-Bot is accepted by CoRL 2023 workshop on L4SR. <br><br>
-              <b><font color="red">[08/2023]</font></b>  The paper of DeRi-Bot is accepted by RA-L and will be presented in ICRA 2024. <br><br>
-              <b><font color="red">[06/2023]</font></b>  The paper of i-VFM is accepted by IROS 2023. -->
-              </td>
-            </tr>
-          </table>
+        <section id="updates" class="section">
+            <h2>Updates</h2>
+            <div class="news-item">
+                <span class="news-date">[05/2025]</span> The paper "Dynamic Robot Tool Use with Vision Language Models" is accepted by the <a href="https://sites.google.com/view/rss2025r3/home">RSS 2025 R3 Workshop</a> 
+            </div>
+            <div class="news-item">
+                <span class="news-date">[04/2025]</span> I will intern at Mitsubishi Electric Research Laboratories (MERL) this summer.
+            </div>
+            <div class="news-item">
+                <span class="news-date">[01/2025]</span> Our paper "Implicit Physics-aware Policy for Dynamic Manipulation of Rigid Objects via Soft Body Tools" is accepted by ICRA 2025.
+            </div>
+            <div class="news-item">
+                    <span class="news-date">[01/2025]</span> Our paper "DeRi-IGP: Manipulating Rigid Objects Using Deformable Objects via Iterative Grasp-Pull" is accepted by RA-L.
+            </div>
 
-          <!-- Research -->
-          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-            <tr>
-              <td width="33%" valign="middle">
-                <heading>Research</heading>
-              </td>
-            </tr>
-            
-            <tr style="background-color:rgba(242, 244, 247, 0.938);">
-              <td width="33%">
-                <img src="paper_images/itup.jpg" width="100%">
-              </td>
-              <td width="66%" valign="middle">
-                <div class="title">
-                  <b>Dynamic Robot Tool Use with Vision Language Models</b>
+            <details class="collapsible-news">
+                <summary>View Older News</summary>
+                <div class="news-item">
+                    <span class="news-date">[10/2023]</span> The short paper "DeRi-Bot: Learning to Collaboratively Manipulate Rigid Objects via Deformable Objects" is accepted by CoRL 2023 workshop on L4SR.
                 </div>
-                <div class="authors">
-                    Zixing Wang*, 
-                    <a href="https://ntrupin.com/">Noah Trupin* </a>
-                    and 
-                    <a href="https://qureshiahmed.github.io/">Ahmed H. Qureshi</a> (* equal contribution)
+                <div class="news-item">
+                    <span class="news-date">[08/2023]</span> The paper "DeRi-Bot: Learning to Collaboratively Manipulate Rigid Objects via Deformable Objects" is accepted by RA-L and will be presented in ICRA 2024.
                 </div>
-                <div class="venue">
-                  <b>RSS 2025 workshop on Reasoning for Robust Robot Manip in the Open World</b>
+                <div class="news-item">
+                    <span class="news-date">[06/2023]</span> The paper "Efficient Q-Learning over Visit Frequency Maps for Multi-agent Exploration of Unknown Environments" is accepted by IROS 2023.
                 </div>
-                <div class="tags">
-                  <a href="https://arxiv.org/pdf/2505.01399">PDF</a>
-                </div>
-              </td>
-            </tr>
-            
-            <tr style="background-color:rgba(242, 244, 247, 0.938);">
-              <td width="33%">
-                <img src="paper_images/icra_2025_ipa.png" width="100%">
-              </td>
-              <td width="66%" valign="middle">
-                <div class="title">
-                  <b>Implicit Physics-aware Policy for Dynamic Manipulation of Rigid Objects via Soft Body Tools  </b>
-                </div>
-                <div class="authors">
-                    Zixing Wang and
-                    <a href="https://qureshiahmed.github.io/">Ahmed H. Qureshi</a>
-                </div>
-                <div class="venue">
-                  <b>ICRA 2025</b>
-                </div>
-                <div class="tags">
-                  <a href="https://arxiv.org/abs/2502.05696">PDF</a> /
-                  <a href="https://www.youtube.com/watch?v=4hPrUDTc4Rg" target="_blank">Video</a>
-                </div>
-              </td>
-            </tr>
+                
+</details>
+        </section>
 
-            <tr style="background-color:rgba(242, 244, 247, 0.938);">
-              <td width="33%">
-                <img src="paper_images/icra_2024_deri_igp.jpg" width="100%">
-              </td>
-              <td width="66%" valign="middle">
-                <div class="title">
-                  <b>DeRi-IGP: Manipulating Rigid Objects Using Deformable Objects via Iterative Grasp-Pull  </b>
-                </div>
-                <div class="authors">
-                    Zixing Wang and
-                    <a href="https://qureshiahmed.github.io/">Ahmed H. Qureshi</a>
-                </div>
-                <div class="venue">
-                  <b>RA-L (2024)</b>
-                </div>
-                <div class="tags">
-                  <a href="https://arxiv.org/abs/2309.04843">PDF</a> /
-                  <a href="https://youtu.be/eELwdTUX3aE?si=an4o5IIwJdZub7_r" target="_blank">Video</a>
-                </div>
-              </td>
-            </tr>
+        <section id="research" class="section">
+            <h2>Research</h2>
 
-            <tr style="background-color:rgba(242, 244, 247, 0.938);">
-              <td width="33%">
-                <img src="paper_images/ral_2023_deribot.png" width="100%">
-              </td>
-              <td width="66%" valign="middle">
-                <div class="title">
-                  <b>DeRi-Bot: Learning to Collaboratively Manipulate Rigid Objects via Deformable Objects</b>
+            <div class="paper-entry">
+                <div class="paper-image">
+                    <img src="paper_images/itup.jpg" alt="Paper Image">
                 </div>
-                <div class="authors">
-                    Zixing Wang and
-                    <a href="https://qureshiahmed.github.io/">Ahmed H. Qureshi</a>
+                <div class="paper-details">
+                    <div class="title">
+                        <b>Dynamic Robot Tool Use with Vision Language Models</b>
+                    </div>
+                    <div class="authors">
+                        Noah Trupin*,
+                        <b>Zixing Wang*</b>,
+                        and
+                        Ahmed H. Qureshi
+                    </div>
+                    <div class="venue">
+                        <b>RSS 2025 workshop on Reasoning for Robust Robot Manip in the Open World</b>
+                    </div>
+                    <div class="tags">
+                        <a href="https://arxiv.org/pdf/2505.01399"><i class="fa fa-file-pdf-o"></i>PDF</a>
+                    </div>
                 </div>
-                <div class="venue">
-                  <b>RA-L (2023) appearing at ICRA 2024 </b> <br>
-                  <b>CoRL 2023 workshop on Learning for Soft Robots <font color="red">(Spotlight)</font></b>
-                </div>
-                <div class="tags">
-                  <a href="https://ieeexplore.ieee.org/document/10225274">PDF</a> /
-                  <a href="https://www.youtube.com/watch?v=5ZPYlxK3Nocl" target="_blank">Video</a>
-                </div>
-              </td>
-            </tr>
-            
-            <tr style="background-color:rgba(242, 244, 247, 0.938);">
-              <td width="33%">
-                <img src="paper_images/icra_2024_anypose.jpg" width="100%">
-              </td>
-              <td width="66%" valign="middle">
-                <div class="title">
-                  <b>AnyPose: Anytime 3D Human Pose Forecasting via Neural Ordinary Differential Equations</b>
-                </div>
-                <div class="authors">
-                    Zixing Wang and
-                    <a href="https://qureshiahmed.github.io/">Ahmed H. Qureshi</a>
-                </div>
-                <div class="venue">
-                  <b>Arxiv 2309.04840</b>
-                </div>
-                <div class="tags">
-                  <a href="https://arxiv.org/abs/2309.04840">PDF</a>
-                </div>
-              </td>
-            </tr>
-            
-            <tr style="background-color:rgba(242, 244, 247, 0.938);">
-              <td width="33%">
-                <img src="paper_images/iros_2023_ivfm.jpg" width="100%">
-              </td>
-              <td width="66%" valign="middle">
-                <div class="title">
-                  <b>Efficient Q-Learning over Visit Frequency Maps for Multi-agent Exploration of Unknown Environments</b>
-                </div>
-                <div class="authors">
-                    <a href="https://xuyangchen.com/">Xuyang Chen*</a>,
-                    <a href="https://ashviniyer21.github.io/website/index.html">Ashvin Iyer*</a>,
-                    Zixing Wang and
-                    <a href="https://qureshiahmed.github.io/">Ahmed H. Qureshi</a>
-                </div>
-                <div class="venue">
-                  <b>IROS 2023</b>
-                </div>
-                <div class="tags">
-                  <a href="https://arxiv.org/abs/2307.16318">PDF</a> /
-                  <a href="https://github.com/corallab-base/Integrated-Visit-Frequency-Maps">Code</a> /
-                  <a href="./video_playback_pages/iros2023.html" target="_blank">Video</a>
-                </div>
-              </td>
-            </tr>
-            
-            <tr style="background-color:rgba(242, 244, 247, 0.938);">
-              <td width="33%">
-                <img src="paper_images/iros_2021_vfm.jpg" width="100%">
-              </td>
-              <td width="66%" valign="middle">
-                <div class="title">
-                  <b>Spatial Action Maps Augmented with Visit Frequency Maps for Exploration Tasks</b>
-                </div>
-                <div class="authors">
-                    Zixing Wang and
-                    <a href="https://www-users.cse.umn.edu/~papan001/">Nikolaos Papanikolopoulos</a>
-                </div>
-                <div class="venue">
-                  <b>IROS 2021</b>
-                </div>
-                <div class="tags">
-                  <a href="https://ieeexplore.ieee.org/abstract/document/9636813">PDF</a> /
-                  <a href="https://github.com/wzx16/sam-exploration">Code</a> /
-                  <a href="./video_playback_pages/iros2021.html" target="_blank">Video</a>
-                </div>
-              </td>
-            </tr>
+            </div>
 
-            <tr style="background-color:rgba(242, 244, 247, 0.938);">
-              <td width="33%">
-                <img src="paper_images/iros_2020_pose.jpg" width="100%">
-              </td>
-              <td width="66%" valign="middle">
-                <div class="title">
-                  <b>Estimating Pedestrian Crossing State Based on Single 2D Body Pose</b>
+            <div class="paper-entry">
+                <div class="paper-image">
+                    <img src="paper_images/icra_2025_ipa.png" alt="Paper Image">
                 </div>
-                <div class="authors">
-                    Zixing Wang and
-                    <a href="https://www-users.cse.umn.edu/~papan001/">Nikolaos Papanikolopoulos</a>
+                <div class="paper-details">
+                    <div class="title">
+                        <b>Implicit Physics-aware Policy for Dynamic Manipulation of Rigid Objects via Soft Body Tools</b>
+                    </div>
+                    <div class="authors">
+                        <b>Zixing Wang</b> and
+                        Ahmed H. Qureshi
+                    </div>
+                    <div class="venue">
+                        <b>ICRA 2025</b>
+                    </div>
+                    <div class="tags">
+                        <a href="https://arxiv.org/abs/2502.05696"><i class="fa fa-file-pdf-o"></i>PDF</a>
+                        <a href="YOUR_YOUTUBE_VIDEO_LINK_FOR_IPA" target="_blank"><i class="fa fa-youtube-play"></i>Video</a>
+                    </div>
                 </div>
-                <div class="venue">
-                  <b>IROS 2020</b>
+            </div>
+
+            <div class="paper-entry">
+                <div class="paper-image">
+                    <img src="paper_images/icra_2024_deri_igp.jpg" alt="Paper Image">
                 </div>
-                <div class="tags">
-                  <a href="http://ras.papercept.net/images/temp/IROS/files/1052.pdf">PDF</a> /
-                  <a href="./video_playback_pages/iros2020.html" target="_blank">Video</a>
+                <div class="paper-details">
+                    <div class="title">
+                        <b>DeRi-IGP: Manipulating Rigid Objects Using Deformable Objects via Iterative Grasp-Pull</b>
+                    </div>
+                    <div class="authors">
+                        <b>Zixing Wang</b> and
+                        Ahmed H. Qureshi
+                    </div>
+                    <div class="venue">
+                        <b>RA-L (2024)</b>
+                    </div>
+                    <div class="tags">
+                        <a href="https://arxiv.org/abs/2309.04843"><i class="fa fa-file-pdf-o"></i>PDF</a>
+                        <a href="YOUR_YOUTUBE_VIDEO_LINK_FOR_DERI_IGP" target="_blank"><i class="fa fa-youtube-play"></i>Video</a>
+                    </div>
                 </div>
-              </td>
-            </tr>
-            
-            <tr style="background-color:rgba(242, 244, 247, 0.938);">
-              <td width="33%">
-                <img src="paper_images/arvix_2018_eco.png" width="100%">
-              </td>
-              <td width="66%" valign="middle">
-                <div class="title">
-                  <b>ECO: Egocentric Cognitive Mapping</b>
+            </div>
+
+            <div class="paper-entry">
+                <div class="paper-image">
+                    <img src="paper_images/ral_2023_deribot.png" alt="Paper Image">
                 </div>
-                <div class="authors">
-                    Jayant Sharma,
-                    Zixing Wang,
-                    Alberto Speranzon,
-                    Vijay Venkataraman and
-                    <a href="https://www-users.cse.umn.edu/~hspark/">Hyun Soo Park</a>
+                <div class="paper-details">
+                    <div class="title">
+                        <b>DeRi-Bot: Learning to Collaboratively Manipulate Rigid Objects via Deformable Objects</b>
+                    </div>
+                    <div class="authors">
+                        <b>Zixing Wang</b> and
+                        Ahmed H. Qureshi
+                    </div>
+                    <div class="venue">
+                        <b>RA-L (2023) appearing at ICRA 2024 </b> <br>
+                        <b>CoRL 2023 workshop on Learning for Soft Robots <span class="highlight">(Spotlight)</span></b>
+                    </div>
+                    <div class="tags">
+                        <a href="https://ieeexplore.ieee.org/document/10225274"><i class="fa fa-file-pdf-o"></i>PDF</a>
+                        <a href="YOUR_YOUTUBE_VIDEO_LINK_FOR_DERI_BOT" target="_blank"><i class="fa fa-youtube-play"></i>Video</a>
+                    </div>
                 </div>
-                <div class="venue">
-                  <b>arxiv 1812.00312</b>
+            </div>
+
+            <div class="paper-entry">
+                <div class="paper-image">
+                    <img src="paper_images/icra_2024_anypose.jpg" alt="Paper Image">
                 </div>
-                <div class="tags">
-                  <a href="https://arxiv.org/pdf/1812.00312.pdf">PDF</a>
+                <div class="paper-details">
+                    <div class="title">
+                        <b>AnyPose: Anytime 3D Human Pose Forecasting via Neural Ordinary Differential Equations</b>
+                    </div>
+                    <div class="authors">
+                        <b>Zixing Wang</b> and
+                        Ahmed H. Qureshi
+                    </div>
+                    <div class="venue">
+                        <b>Arxiv 2309.04840</b>
+                    </div>
+                    <div class="tags">
+                        <a href="https://arxiv.org/abs/2309.04840"><i class="fa fa-file-pdf-o"></i>PDF</a>
+                    </div>
                 </div>
-              </td>
-            </tr>
+            </div>
 
-            <!-- Reserve for Template -->
-
-            <!-- <tr style="background-color:rgba(242, 244, 247, 0.938);">
-              <td width="33%">
-                <img src="paper_images/iros_2020_pose.jpg" width="100%">
-              </td>
-              <td width="66%" valign="middle">
-                <div class="title">
-                  <b>Estimating Pedestrian Crossing State Based on Single 2D Body Pose</b>
+            <div class="paper-entry">
+                <div class="paper-image">
+                    <img src="paper_images/iros_2023_ivfm.jpg" alt="Paper Image">
                 </div>
-                <div class="authors">
-                    Zixing Wang, and
-                    <a href="https://www-users.cse.umn.edu/~papan001/">Nikolaos Papanikolopoulos</a>
+                <div class="paper-details">
+                    <div class="title">
+                        <b>Efficient Q-Learning over Visit Frequency Maps for Multi-agent Exploration of Unknown Environments</b>
+                    </div>
+                    <div class="authors">
+                        Xuyang Chen*,
+                        Ashvin Iyer*,
+                        <b>Zixing Wang</b> and
+                        Ahmed H. Qureshi (* equal contribution)
+                    </div>
+                    <div class="venue">
+                        <b>IROS 2023</b>
+                    </div>
+                    <div class="tags">
+                        <a href="https://arxiv.org/abs/2307.16318"><i class="fa fa-file-pdf-o"></i>PDF</a>
+                        <a href="https://github.com/corallab-base/Integrated-Visit-Frequency-Maps"><i class="fa fa-code"></i>Code</a>
+                        <a href="./video_playback_pages/iros2023.html" target="_blank"><i class="fa fa-youtube-play"></i>Video</a>
+                    </div>
                 </div>
-                <div class="venue">
-                  <i>IEEE/RSJ IROS</i>, 2020
+            </div>
+
+            <div class="paper-entry">
+                <div class="paper-image">
+                    <img src="paper_images/iros_2021_vfm.jpg" alt="Paper Image">
                 </div>
-                <div class="tags">
-                  <a href="http://ras.papercept.net/images/temp/IROS/files/1052.pdf">PDF</a> /
-                  <a href="./video_playback_pages/iros2020.html" target="_blank">Video</a>
+                <div class="paper-details">
+                    <div class="title">
+                        <b>Spatial Action Maps Augmented with Visit Frequency Maps for Exploration Tasks</b>
+                    </div>
+                    <div class="authors">
+                        <b>Zixing Wang</b> and
+                        Nikolaos Papanikolopoulos
+                    </div>
+                    <div class="venue">
+                        <b>IROS 2021</b>
+                    </div>
+                    <div class="tags">
+                        <a href="https://ieeexplore.ieee.org/abstract/document/9636813"><i class="fa fa-file-pdf-o"></i>PDF</a>
+                        <a href="https://github.com/wzx16/sam-exploration"><i class="fa fa-code"></i>Code</a>
+                        <a href="./video_playback_pages/iros2021.html" target="_blank"><i class="fa fa-youtube-play"></i>Video</a>
+                    </div>
                 </div>
-              </td>
-            </tr> -->
+            </div>
 
-          </table>
-          <br>
-          <br>
+            <div class="paper-entry">
+                <div class="paper-image">
+                    <img src="paper_images/iros_2020_pose.jpg" alt="Paper Image">
+                </div>
+                <div class="paper-details">
+                    <div class="title">
+                        <b>Estimating Pedestrian Crossing State Based on Single 2D Body Pose</b>
+                    </div>
+                    <div class="authors">
+                        <b>Zixing Wang</b> and
+                        Nikolaos Papanikolopoulos
+                    </div>
+                    <div class="venue">
+                        <b>IROS 2020</b>
+                    </div>
+                    <div class="tags">
+                        <a href="http://ras.papercept.net/images/temp/IROS/files/1052.pdf"><i class="fa fa-file-pdf-o"></i>PDF</a>
+                        <a href="./video_playback_pages/iros2020.html" target="_blank"><i class="fa fa-youtube-play"></i>Video</a>
+                    </div>
+                </div>
+            </div>
 
-          <!-- Education -->
-          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-          <tr>
-            <td width="100%" valign="middle">
-              <heading>Education</heading>
-              <table>
-                <tr>
-                  <td width="88%">
-                    <b>Purdue University</b>, West Lafayette, IN, USA<br>
-                    Department of Computer Science<br>
-                    <i>Ph.D. Student</i><br>
-                    Expected 2026
-                  </td>
-                  <td width="12%">
-                    <img src="profile_images/purdue_cs_logo.jpg" width="100%" style="display: block; margin-left: auto; margin-right: auto;">
-                  </td>
-                </tr>
+            <div class="paper-entry">
+                <div class="paper-image">
+                    <img src="paper_images/arvix_2018_eco.png" alt="Paper Image">
+                </div>
+                <div class="paper-details">
+                    <div class="title">
+                        <b>ECO: Egocentric Cognitive Mapping</b>
+                    </div>
+                    <div class="authors">
+                        Jayant Sharma,
+                        <b>Zixing Wang</b>,
+                        Alberto Speranzon,
+                        Vijay Venkataraman and
+                        Hyun Soo Park
+                    </div>
+                    <div class="venue">
+                        <b>arxiv 1812.00312</b>
+                    </div>
+                    <div class="tags">
+                        <a href="https://arxiv.org/pdf/1812.00312.pdf"><i class="fa fa-file-pdf-o"></i>PDF</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                <tr>
-                  <td width="88%">
-                    <b>University of Minnesota, Twin Cities</b>, Minneapolis, MN, USA<br>
-                    Minnesota Robotics Institute (MnRI)<br>
-                    <i>Master of Science in Robotics</i><br>
-                    Degree awarded in Dec. 2021<br>
-                  </td>
-                  <td width="12%">
-                    <img src="profile_images/mnri_logo.jpg" width="100%" style="display: block; margin-left: auto; margin-right: auto;">
-                  </td>
-                </tr>
+        <section id="education" class="section">
+            <h2>Education</h2>
+            <ul class="experience-list">
+                <li>
+                    <div class="org-details">
+                        <b>Purdue University</b>, West Lafayette, IN, USA<br>
+                        Department of Computer Science<br>
+                        <i>Ph.D. Student</i><br>
+                        Expected 2026
+                    </div>
+                    <div class="org-logo">
+                        <img src="profile_images/purdue_cs_logo.jpg" alt="Purdue CS Logo">
+                    </div>
+                </li>
+                <li>
+                    <div class="org-details">
+                        <b>University of Minnesota, Twin Cities</b>, Minneapolis, MN, USA<br>
+                        Minnesota Robotics Institute (MnRI)<br>
+                        <i>Master of Science in Robotics</i><br>
+                        Degree awarded in Dec. 2021<br>
+                    </div>
+                    <div class="org-logo">
+                        <img src="profile_images/mnri_logo.jpg" alt="MnRI Logo">
+                    </div>
+                </li>
+                <li>
+                    <div class="org-details">
+                        <b>University of Minnesota, Twin Cities</b>, Minneapolis, MN, USA<br>
+                        Department of Computer Science and Engineering<br>
+                        <i>Bachelor of Arts in Computer Science</i><br>
+                        Degree awarded in May. 2020<br>
+                    </div>
+                    <div class="org-logo">
+                        <img src="profile_images/umn_cs_logo.jpg" alt="UMN CS Logo">
+                    </div>
+                </li>
+            </ul>
+        </section>
 
-                <tr>
-                  <td width="88%">
-                    <b>University of Minnesota, Twin Cities</b>, Minneapolis, MN, USA<br>
-                    Department of Computer Science and Engineering<br>
-                    <i>Bachelor of Arts in Computer Science</i><br>
-                    Degree awarded in May. 2020<br>
-                  </td>
-                  <td width="12%">
-                    <img src="profile_images/umn_cs_logo.jpg" width="100%" style="display: block; margin-left: auto; margin-right: auto;">
-                  </td>
-                </tr>
+        <section id="experiences" class="section">
+            <h2>Experiences</h2>
+            <ul class="experience-list">
+                <li>
+                    <div class="org-details">
+                        <a href="https://www.merl.com/"><b>Mitsubishi Electric Research Laboratories (MERL)</b></a><br>
+                        Cambridge, MA, USA<br>
+                        Research Intern<br>
+                        May. 2024 to Aug. 2024<br>
+                    </div>
+                    <div class="org-logo">
+                        <img src="profile_images/merl_logo.png" alt="MERL Logo">
+                    </div>
+                </li>
+                <li>
+                    <div class="org-details">
+                        <a href="https://www.imagesensing.com/"><b>Image Sensing Systems</b></a><br>
+                        Saint Paul, MN, USA<br>
+                        Computer Vision Research Intern<br>
+                        Jan. 2020 to Sep. 2020<br>
+                    </div>
+                    <div class="org-logo">
+                        <img src="profile_images/iss_logo.jpg" alt="ISS Logo">
+                    </div>
+                </li>
+            </ul>
+        </section>
 
-              </table>
-            </td>
-          </tr>
-          </table>
+        <section id="reviewer-service" class="section">
+            <h2>Reviewer Service</h2>
+            <ul class="simple-list">
+                <li>IEEE/RSJ International Conference on Intelligent Robots and Systems (<b>IROS</b>)</li>
+                <li>IEEE International Conference on Robotics and Automation (<b>ICRA</b>)</li>
+                <li>Conference on Robot Learning (<b>CoRL</b>)</li>
+            </ul>
+        </section>
 
+        <section id="teaching" class="section">
+            <h2>Teaching</h2>
+            <ul class="experience-list">
+                <li>
+                    <div class="org-details">
+                        <a href="https://qureshiahmed.github.io/sp24.html"><b>CS 55800 - Introduction to Robot Learning</b></a><br>
+                        Purdue University<br>
+                        Graduate Teaching Assistant<br>
+                        Spring 2024<br>
+                    </div>
+                    <div class="org-logo">
+                        <img src="profile_images/purdue_cs_logo.jpg" alt="Purdue CS Logo">
+                    </div>
+                </li>
+                <li>
+                    <div class="org-details">
+                        <a href="https://qureshiahmed.github.io/fall23.html"><b>CS 49000 - Introduction to Robotics</b></a><br>
+                        Purdue University<br>
+                        Graduate Teaching Assistant<br>
+                        Fall 2023<br>
+                    </div>
+                    <div class="org-logo">
+                        <img src="profile_images/umn_cs_logo.jpg" alt="UMN CS Logo">
+                    </div>
+                </li>
+                <li>
+                    <div class="org-details">
+                        <a href="https://www-users.cse.umn.edu/~kauffman/2021/"><b>CSCI 2021 - Machine Architecture and Organization</b></a><br>
+                        University of Minnesota<br>
+                        Graduate Teaching Assistant<br>
+                        Spring, Fall 2021<br>
+                    </div>
+                    <div class="org-logo">
+                        <img src="profile_images/umn_cs_logo.jpg" alt="UMN CS Logo">
+                    </div>
+                </li>
+            </ul>
+        </section>
 
-          <!-- Experience -->
-          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-          <tr>
-            <td width="100%" valign="middle">
-              <heading>Experiences</heading>
-              <table>
-                <tr>
-                  <td width="88%">
-                    <a href="https://www.merl.com/"><b>Mitsubishi Electric Research Laboratories (MERL)</b></a><br>
-                    Cambridge, MA, USA<br>
-                    Research Intern<br>
-                    May. 2024 to Aug. 2024<br>
-                  </td>
-                  <td width="12%">
-                    <img src="profile_images/merl_logo.png" width="100%" style="display: block; margin-left: auto; margin-right: auto;">
-                  </td>
-                </tr>
-
-                <tr>
-                  <td width="88%">
-                    <a href="https://www.imagesensing.com/"><b>Image Sensing Systems</b></a><br>
-                    Saint Paul, MN, USA<br>
-                    Computer Vision Research Intern<br>
-                    Jan. 2020 to Sep. 2020<br>
-                  </td>
-                  <td width="12%">
-                    <img src="profile_images/iss_logo.jpg" width="100%" style="display: block; margin-left: auto; margin-right: auto;">
-                  </td>
-                </tr>
-                <!-- <tr>
-                  <td width="90%">
-                    <a href="https://lichtmanlab.fas.harvard.edu"><b>Lichtman Lab</b></a>, <b>Harvard University</b><br>
-                    Summer Intern &bull; Aug. 2018 to Sept. 2018<br>
-                    Advisors: Professor <a href="https://lichtmanlab.fas.harvard.edu/people/jeff-lichtman">Jeffrey W. Lichtman</a> and Professor <a href="https://vcg.seas.harvard.edu/people/hanspeter-pfister">Hanspeter Pfister</a>
-                  </td>
-                  <td width="10%">
-                    <img src="profile_images/harvard-logo.png" width="100%" style="display: block; margin-left: auto; margin-right: auto;">
-                  </td>
-                </tr>
-                <tr>
-                  <td width="90%">
-                    <a href="https://www.csail.mit.edu"><b>Computer Science and Artificial Intelligence Laboratory</b></a>, <b>Massachusetts Institute of Technology</b><br>
-                    Research Intern &bull; Jul. 2017 to May 2018<br>
-                    Advisors: Professor <a href="https://cocosci.mit.edu/josh">Joshua B. Tenenbaum</a> and Professor <a href="https://billf.mit.edu/">William T. Freeman</a>
-                  </td>
-                  <td width="10%">
-                    <img src="profile_images/mit-logo.png" width="100%" style="display: block; margin-left: auto; margin-right: auto;">
-                  </td>
-                </tr> -->
-              </table>
-            </td>
-          </tr>
-          </table>
-
-          <!-- Service -->
-          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-          <tr>
-            <td width="100%" valign="middle">
-              <heading>Reviewer Service</heading><br><br>
-              IEEE/RSJ International Conference on Intelligent Robots and Systems (<b>IROS</b>)<br>
-              IEEE International Conference on Robotics and Automation (<b>ICRA</b>)<br>
-              Conference on Robot Learning (<b>CoRL</b>)<br>
-            </td>
-          </tr>
-          </table>
-
-
-          <!-- Teaching -->
-          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-            <tr>
-              <td width="100%" valign="middle">
-                <heading>Teaching</heading>
-                <table>
-                  <tr>
-                    <td width="88%">
-                      <a href="https://qureshiahmed.github.io/sp24.html"><b>CS 55800 - Introduction to Robot Learning</b></a><br>
-                      Purdue University<br>
-                      Graduate Teaching Assistant<br>
-                      Spring 2024<br>
-                    </td>
-                    <td width="12%">
-                      <img src="profile_images/purdue_cs_logo.jpg" width="100%" style="display: block; margin-left: auto; margin-right: auto;">
-                    </td>
-                  </tr>
-                  <tr>
-                    <td width="88%">
-                      <a href="https://qureshiahmed.github.io/fall23.html"><b>CS 49000 - Introduction to Robotics</b></a><br>
-                      Purdue University<br>
-                      Graduate Teaching Assistant<br>
-                      Fall 2023<br>
-                    </td>
-                    <td width="12%">
-                      <img src="profile_images/purdue_cs_logo.jpg" width="100%" style="display: block; margin-left: auto; margin-right: auto;">
-                    </td>
-                  </tr>
-                  
-                  <tr>
-                    <td width="88%">
-                      <a href="https://www-users.cse.umn.edu/~kauffman/2021/"><b>CSCI 2021 - Machine Architecture and Organization</b></a><br>
-                      University of Minnesota<br>
-                      Graduate Teaching Assistant<br>
-                      Spring, Fall 2021<br>
-                    </td>
-                    <td width="12%">
-                      <img src="profile_images/umn_cs_logo.jpg" width="100%" style="display: block; margin-left: auto; margin-right: auto;">
-                    </td>
-                  </tr>
-  
-                </table>
-              </td>
-            </tr>
-          </table>
-          
-          <hr>
-          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-            <tr>
-              <td width="100%" align="middle">
-                <a href="https://clustrmaps.com/site/1bv5x"  title="Visit tracker"><img src="//www.clustrmaps.com/map_v2.png?d=DWLkC6XF1SCSwrHMhWmwL3ZghvcHnG9N5BhKGU0W6IU&cl=ffffff" class="center"/></a>
-              </td>
-            </tr>
-          </table>
-          
-          <!-- Acknowledgements -->
-          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-          <tr>
-              <td><br>
-              <p align="middle">
-              <font size="2">
-              Website source from <a href="https://jonbarron.info">Jon Barron</a>.
-          </tr>
-          </table>
-        </td>
-      </tr>
-    </table>
-  </body>
-<script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'}),_trfd.push({'ap':'cpsh-oh'},{'server':'p3plzcpnl472835'},{'id':'7914943'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script><script src='https://img1.wsimg.com/tcc/tcc_l.combined.1.0.6.min.js'></script></html>
+        <footer>
+            <div class="footer-content">
+                <a href="https://clustrmaps.com/site/1bv5x" title="Visit tracker"><img src="//www.clustrmaps.com/map_v2.png?d=DWLkC6XF1SCSwrHMhWmwL3ZghvcHnG9N5BhKGU0W6IU&cl=ffffff" class="center-img"/></a>
+                <p>Website source from <a href="https://jonbarron.info">Jon Barron</a>.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
