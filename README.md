@@ -1,1 +1,9 @@
-This is the source code to Jon Barron's public academic website: https://jonbarron.info/. You are welcome to clone this code for your own personal use, just please attribute the source to the original website or to this repo. If you do clone this website, feel free to add an attribution link to your own downstream website in index.html if you want.
+# Zixing Wang — Academic Website
+
+Source for [wzx16.github.io](https://wzx16.github.io/), a lightweight single-page academic portfolio focused on robotics research, selected projects, publications, and experience.
+
+The site uses semantic HTML, custom CSS, and a small dependency-free JavaScript module for publication filtering. The CV button links directly to the current PDF on Google Drive; there is no separate CV page.
+
+## Local preview
+
+Run `python3 -m http.server 8000`, then open `http://127.0.0.1:8000/`.
