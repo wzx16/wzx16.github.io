@@ -1,6 +1,6 @@
 # Zixing Wang — Academic Website
 
-Source for [wzx16.github.io](https://wzx16.github.io/), a lightweight single-page academic portfolio focused on robotics research, selected projects, publications, and experience.
+Source for [wzx16.github.io](https://wzx16.github.io/), a lightweight single-page academic portfolio focused on robotics research and publications.
 
 The site uses semantic HTML, custom CSS, and a small dependency-free JavaScript module for publication filtering. The CV button links directly to the current PDF on Google Drive; there is no separate CV page.
 
