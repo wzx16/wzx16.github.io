@@ -161,7 +161,7 @@ a:focus-visible, button:focus-visible, select:focus-visible { outline: 3px solid
 .paper-entry[hidden] { display: none; }
 .paper-entry:hover { border-color: #c9d7cf; }
 .paper-entry > img { width: 100%; aspect-ratio: 2 / 1; border: 1px solid #edf0f2; border-radius: 4px; background: #f5f6f7; object-fit: cover; }
-.paper-entry > img.teaser-natural { aspect-ratio: auto; height: auto; object-fit: contain; }
+.paper-entry > img.teaser-contain { object-fit: contain; background: var(--white); }
 .stacked-teaser { display: grid; grid-template-rows: repeat(2, minmax(0, 1fr)); gap: 4px; width: 100%; aspect-ratio: 2 / 1; padding: 4px; overflow: hidden; border: 1px solid #edf0f2; border-radius: 4px; background: #f5f6f7; }
 .teaser-half { position: relative; display: block; min-height: 0; overflow: hidden; background: #fff; }
 .teaser-half img { position: absolute; top: 50%; left: 0; width: 202%; max-width: none; height: auto; transform: translateY(-50%); }
